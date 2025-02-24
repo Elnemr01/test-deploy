@@ -17,7 +17,7 @@ function Products (props) {
                 return (
                     <>
                     <div className="card" key={e.id}>
-                        <img src={e.image} loading="lazy" width="300px" alt="photo"/>
+                        <img src={e.image} loading="lazy" width="300px" alt="check your wifi"/>
                         <h2>{e.title}</h2>
                         <p>{e.price}</p>
                         <Link to={`/products/${e.id}`}>Details</Link>
