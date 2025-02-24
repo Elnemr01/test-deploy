@@ -6,7 +6,7 @@ let cartSlice=createSlice({
     name:"cartSlice",
     reducers :{
         addToCart : (state,action) => {
-            let findProduct=state.find((e)=> e.id===action.payload.id);
+            let findProduct=state.find((e)=> e.id==action.payload.id);
             if(findProduct) {
                 findProduct.quantity++;
             }
@@ -18,7 +18,7 @@ let cartSlice=createSlice({
         },
 
         removeFromCart : (state,action) => {
-            let newSt=state.filter((ele)=> ele.id!==action.payload.id
+            let newSt=state.filter((ele)=> ele.id!=action.payload.id
             );
             return newSt;
         },

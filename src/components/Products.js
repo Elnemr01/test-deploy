@@ -10,7 +10,7 @@ function Products (props) {
     let dispatch=useDispatch();
     useEffect(()=> {
         dispatch(fetchProducts());
-    },[])
+    })
     return (
         <>
             {state.map((e)=> {

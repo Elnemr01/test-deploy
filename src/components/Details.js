@@ -12,7 +12,7 @@ function Details (props) {
         .then((data)=> {
             setProduct(data);
         })
-    },[]);
+    });
     // console.log(product);
 
     return (
