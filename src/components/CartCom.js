@@ -31,8 +31,8 @@ function Cart (props) {
                         </>
                     )
             })}
-            {cart.length!=0 && <h3>total price : {totalPrice}$</h3>}
-            {cart.length!=0 && <button onClick={()=> {dispatch(clearCart())}}>clear cart</button>}
+            {cart.length!==0 && <h3>total price : {totalPrice}$</h3>}
+            {cart.length!==0 && <button onClick={()=> {dispatch(clearCart())}}>clear cart</button>}
             
         </>
     );
