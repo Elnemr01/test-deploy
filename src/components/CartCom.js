@@ -18,7 +18,7 @@ function Cart (props) {
                     return (    
                         <>
                         <div className="card" key={e.id}>
-                            <img src={e.image} loading="lazy" width="300px"/>
+                            <img src={e.image} loading="lazy" width="300px" alt="photo"/>
                             <h2>{e.title}</h2>
                             <h4>Quantity:{1 && e.quantity}</h4>
                             <p>{e.price*e.quantity}</p>

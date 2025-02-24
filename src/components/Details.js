@@ -19,7 +19,7 @@ function Details (props) {
         <>
         {/* <h2>details</h2> */}
             <div className="card">
-                        <img src={product.image} loading="lazy" width="300px"/>
+                        <img src={product.image} loading="lazy" width="300px" alt="photo"/>
                         <h2>{product.title}</h2>
                         <p>{product.price}</p>
                     </div>
